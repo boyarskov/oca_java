@@ -7,13 +7,14 @@ public class StudentTest {
 
     public static void main(String[] args) {
         MarkPetrov.StudentResult(90, "Mark", "Petrov",
-                1990, 5, 3, 4);
+                1990);
+        MarkPetrov.StudentResult(5, 3, 4);
         GlebPopov.StudentResult(93, "Gleb", "Popov",
-                1995, 3, 3, 2);
+                1995);
+        GlebPopov.StudentResult(3, 3, 2);
         NastyaBoyarskova.StudentResult(99, "Nastya", "Boyarskova",
-                2015, 5, 5, 4);
-
-
+                2015);
+        NastyaBoyarskova.StudentResult(5, 5, 4);
     }
 
 }
