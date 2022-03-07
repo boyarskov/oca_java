@@ -1,27 +1,34 @@
 package ru.oca.lession06;
 
 public class MethodOverloading {
-    void summa() {
-        System.out.println("Amount is: " + null);
+    int summa() {
+        int summa = 0;
+        System.out.println("Amount is: " + summa);
+        return summa;
     }
 
-    void summa(int a) {
+    int summa(int a) {
+        int summa1 = a;
         System.out.println("Amount is: " + a);
+        return summa1;
     }
 
-    void summa(int a, int b) {
-        int summa = a + b;
-        System.out.println("Amount is: " + summa);
+    int summa(int a, int b) {
+        int summa2 = a + b;
+        System.out.println("Amount is: " + summa2);
+        return summa2;
     }
 
-    void summa(int a, int b, int c) {
-        int summa = a + b + c;
-        System.out.println("Amount is: " + summa);
+    int summa(int a, int b, int c) {
+        int summa3 = a + b + c;
+        System.out.println("Amount is: " + summa3);
+        return summa3;
     }
 
-    void summa(int a, int b, int c, int d) {
-        int summa = a + b + c + d;
-        System.out.println("Amount is: " + summa);
+    int summa(int a, int b, int c, int d) {
+        int summa4 = a + b + c + d;
+        System.out.println("Amount is: " + summa4);
+        return summa4;
     }
 
 
