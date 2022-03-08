@@ -1,7 +1,18 @@
 package ru.oca.lession09;
 
 public class Project {
+    public static void abc() {
+        String a1 = new String("ABC");
+        String a2 = new String("DEF");
+    }
 
+    public static void main(String[] args) {
+        Project j = new Project();
+        abc();
+        abc();
+        String a1 = new String("ABC");
+        abc();
+    }
 }
 
 class Test1 {
