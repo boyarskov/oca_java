@@ -5,6 +5,7 @@ public class SuperHeroes {
     public static void main(String[] params) {
         SuperHero firstHero = new SuperAgility(new SuperIntelligence(new GreenSuperHero()));
         SuperHero secondHero = new SuperPower(new SuperAgility(new RedSuperHero()));
+        SuperHero doubleAgilityHero = new SuperAgility(new SuperAgility(new GreenSuperHero()));
         printInfo(firstHero);
         printInfo(secondHero);
         fight(firstHero, secondHero);
