@@ -1,4 +1,4 @@
-package ru.oca.lession28.decorator;
+package ru.oca.patterns.decorator;
 
 public abstract class SuperHeroDecorator implements SuperHero{
     protected final SuperHero superHero;

@@ -1,8 +1,8 @@
-package ru.oca.lession28.decorator;
+package ru.oca.patterns.decorator;
 
-public class SuperAgility extends SuperHeroDecorator {
+public class SuperIntelligence extends SuperHeroDecorator {
 
-    public SuperAgility(SuperHero superHero) {
+    public SuperIntelligence(SuperHero superHero) {
         super(superHero);
     }
 
@@ -13,6 +13,6 @@ public class SuperAgility extends SuperHeroDecorator {
 
     @Override
     public int getChanceOfSurvival() {
-        return super.getChanceOfSurvival() + 3;
+        return super.getChanceOfSurvival() + 7;
     }
 }
