@@ -16,6 +16,10 @@ public class Auto {
         System.out.println("Тормозим!");
     }
 
+    public void setFillStrategy(FillStrategy fillStrategy) {
+        this.fillStrategy = fillStrategy;
+    }
+
     public static void main(String[] args) {
         Auto sedan = new Sedan();
         Auto hybrid = new HybridAuto();
