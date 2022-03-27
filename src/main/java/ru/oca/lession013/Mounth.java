@@ -1,48 +1,36 @@
 package ru.oca.lession013;
 
 public class Mounth {
-    public Mounth(int number) {
+
+    public static void daysMounth(int number) {
         switch (number) {
-            case 1:
-                System.out.println("January");
-                break;
             case 2:
-                System.out.println("February");
-                break;
-            case 3:
-                System.out.println("March");
+                System.out.println("В этом месяце 28 дней");
                 break;
             case 4:
-                System.out.println("April");
-                break;
-            case 5:
-                System.out.println("May");
-                break;
             case 6:
-                System.out.println("June");
-                break;
-            case 7:
-                System.out.println("Jule");
-                break;
-            case 8:
-                System.out.println("August");
-                break;
             case 9:
-                System.out.println("September");
-                break;
-            case 10:
-                System.out.println("October");
-                break;
             case 11:
-                System.out.println("November");
+                System.out.println("В этом месяце 30 дней");
                 break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
             case 12:
-                System.out.println("December");
+                System.out.println("В этом месяце 31 день");
                 break;
+            default:
+                System.out.println("Такого месяца не существует");
         }
     }
 
     public static void main(String[] args) {
-        Mounth mounth = new Mounth(3);
+        int mounth = 12;
+        for (int i = 0; i < mounth; i++) {
+            Mounth.daysMounth(i);
+        }
     }
 }
