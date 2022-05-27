@@ -1,6 +1,7 @@
 package ru.oca.lession018.Collections;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CollectionsMap {
     public static void main(String[] args) {
@@ -19,5 +20,8 @@ public class CollectionsMap {
         System.out.println(persons.containsValue("Ivanov Ivan Artemovich"));
         System.out.println("ID 789123: " + persons.get(789123));
         System.out.println("ID 999999: " + persons.get(999999));
+        System.out.println("All person: " + persons.values());
+        System.out.println("All person: " + persons.keySet());
+
     }
 }
