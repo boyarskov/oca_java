@@ -1,7 +1,6 @@
 package ru.oca.lession018.Collections;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class CollectionsLinkedList {
     public static void main(String[] args) {

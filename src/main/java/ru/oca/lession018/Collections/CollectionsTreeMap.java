@@ -2,10 +2,11 @@ package ru.oca.lession018.Collections;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class CollectionsMap {
+public class CollectionsTreeMap {
     public static void main(String[] args) {
-        Map<Integer, String> persons = new HashMap<Integer, String>();
+        TreeMap<Integer, String> persons = new TreeMap<>();
         System.out.println(persons);
         persons.put(123456, "Ivanov Ivan Ivanovich");
         persons.put(789123, "Petrov Ivan Ivanovich");
