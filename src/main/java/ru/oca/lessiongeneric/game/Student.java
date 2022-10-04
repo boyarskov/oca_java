@@ -1,0 +1,7 @@
+package ru.oca.lessiongeneric.game;
+
+public class Student extends Participant {
+    public Student(String name, int age) {
+        super(name, age);
+    }
+}
