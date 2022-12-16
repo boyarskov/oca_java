@@ -145,10 +145,11 @@ public final class GeneratePassword {
     }
 
     public static void main(String[] args) {
-        GeneratePassword passwordGenerator = new GeneratePassword.PasswordGeneratorBuilder()
+        GeneratePassword passwordGenerator = new PasswordGeneratorBuilder()
                 .useDigits(true)
                 .useLower(true)
                 .useUpper(true)
+                .usePunctuation(true)
                 .build();
         for (int i = 0; i < 9; i++) {
             String password = passwordGenerator.generate(9); // output ex.: lrU12fmM 75iwI90o
