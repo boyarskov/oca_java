@@ -1,29 +1,22 @@
 package ru.oca.lession05;
 
 public class Employee {
-    public int id;
-    public String surname;
-    public int age;
-    public int salary;
-    public String department;
+    int id;
+    String surname;
+    int age;
+    int salary;
+    String department;
 
-    boolean Employee(int id, String surname, int age, int salary, String department) {
-        this.id = id;
-        this.surname = surname;
-        this.age = age;
-        this.salary = salary;
-        this.department = department;
-        return true;
-    }
-
-    int getSalary() {
-        System.out.println("Salary " + surname + ": " + salary);
-        return salary;
+    public Employee(int id1, String surname1, int age1, int salary1, String department1) {
+        id = id1;
+        surname = surname1;
+        age = age1;
+        salary = salary1;
+        department = department1;
     }
 
     int salaryX2() {
         salary *= 2;
-        System.out.println("New salary " + surname + ": " + salary);
         return salary;
     }
 
