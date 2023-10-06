@@ -1,20 +1,28 @@
 package ru.oca.lession04;
 
 public class StudentTest {
-    static Student MarkPetrov = new Student();
-    static Student GlebPopov = new Student();
-    static Student NastyaBoyarskova = new Student();
+
 
     public static void main(String[] args) {
-        MarkPetrov.StudentResult(90, "Mark", "Petrov",
-                1990);
-        MarkPetrov.StudentResult(5, 3, 4);
-        GlebPopov.StudentResult(93, "Gleb", "Popov",
-                1995);
-        GlebPopov.StudentResult(3, 3, 2);
-        NastyaBoyarskova.StudentResult(99, "Nastya", "Boyarskova",
-                2015);
-        NastyaBoyarskova.StudentResult(5, 5, 4);
+        Student MarkPetrov = new Student();
+        MarkPetrov.idNumber = 1;
+        MarkPetrov.name = "Mark";
+        MarkPetrov.firstName = "Petrov";
+        MarkPetrov.yearStudy = 2020;
+        MarkPetrov.mathematicsScore = 4;
+        MarkPetrov.economicsScore = 5;
+        MarkPetrov.englishScore = 3;
+        MarkPetrov.averageScore();
+
+        Student GlebPopov = new Student(90, "Mark", "Petrov",1990);
+        GlebPopov.mathematicsScore = 3;
+        GlebPopov.economicsScore = 3;
+        GlebPopov.englishScore = 4;
+        GlebPopov.averageScore();
+
+        Student NastyaBoyarskova = new Student(93, "Gleb", "Popov",
+                1995, 5, 3, 4);
+        NastyaBoyarskova.averageScore();
     }
 
 }

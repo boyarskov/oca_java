@@ -5,25 +5,33 @@ public class Student {
     String name;
     String firstName;
     int yearStudy;
-    int averageMathematics;
-    int averageEconomics;
-    int averageEnglish;
+    int mathematicsScore;
+    int economicsScore;
+    int englishScore;
 
-    boolean StudentResult(int idNumber, String name, String firstName, int yearStudy) {
-        this.idNumber = idNumber;
-        this.name = name;
-        this.firstName = firstName;
-        this.yearStudy = yearStudy;
-        System.out.println("Arithmetic mean " + this.name + " " + this.firstName + ": ");
-        return true;
+    Student(int idNumber1, String name1, String firstName1, int yearStudy1, int mathematicsScore1, int economicsScore1, int englishScore1) {
+        idNumber = idNumber1;
+        name = name1;
+        firstName = firstName1;
+        yearStudy = yearStudy1;
+        mathematicsScore = mathematicsScore1;
+        economicsScore = economicsScore1;
+        englishScore = englishScore1;
     }
 
-    int StudentResult(int averageMathematics, int averageEconomics, int averageEnglish) {
-        this.averageMathematics = averageMathematics;
-        this.averageEconomics = averageEconomics;
-        this.averageEnglish = averageEnglish;
-        int average = (averageMathematics + averageEconomics + averageEnglish) / 3;
-        System.out.println(average);
-        return average;
+    Student(int idNumber2, String name2, String firstName2, int yearStudy2) {
+        this(idNumber2, name2, firstName2, yearStudy2, 0, 0, 0);
     }
+
+    Student() {
+
+    }
+
+    int averageScore() {
+        int averageScore = (mathematicsScore + economicsScore + englishScore) / 3;
+        System.out.println(firstName + " Average Score: " + averageScore);
+        return averageScore;
+    }
+
+
 }
