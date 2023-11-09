@@ -2,9 +2,9 @@ package ru.oca.lession05;
 
 public class Employee {
     int id;
-    String surname;
+    public String surname;
     int age;
-    int salary;
+    private int salary;
     String department;
 
     public Employee(int id1, String surname1, int age1, int salary1, String department1) {
