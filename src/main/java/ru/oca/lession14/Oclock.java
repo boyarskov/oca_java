@@ -2,21 +2,29 @@ package ru.oca.lession14;
 
 public class Oclock {
     static void timer() {
-        OUTER: for(int i = 0; i < 6; i++) {
-            MIDDLE: for (int j = 0; j < 60; j++) {
-                if (i > 1) {
+        int hour = 0;
+        int minute = -1;
+        int second = 0;
+        OUTER: while (hour < 6) {
+            hour++;
+            MIDDLE: do {
+                minute++;
+                if (hour > 1) {
                     break OUTER;
                 }
-                for (int k = 0; k < 60; k++) {
-                    System.out.println(i + ":" + j + ":" + k);
-                    if ((k * i) > j) {
+                INNER: while (second < 60) {
+                    System.out.println(hour + ":" + minute + ":" + second);
+                    second++;
+                    if ((second * hour) > minute) {
                         continue MIDDLE;
                     }
                 }
+                } while (minute < 60);
+                 hour++;
+                }
             }
+
+        public static void main (String[] args){
+            timer();
         }
     }
-    public static void main(String[] args) {
-        timer();
-    }
-}
