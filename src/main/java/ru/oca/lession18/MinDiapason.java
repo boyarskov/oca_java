@@ -1,0 +1,18 @@
+package ru.oca.lession18;
+
+public class MinDiapason {
+    public static int findMin(int[] array, int start, int finish) {
+        int min = array[start];
+        for (int i = start + 1; i <= finish; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = new int[]{2, 5, 9, 8, 7, 1};
+        System.out.println(findMin(numbers, 0, 5));
+    }
+}
